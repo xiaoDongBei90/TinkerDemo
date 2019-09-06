@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.fusheng.tinkerdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/iv_resource"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" />
 
     <Button
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="按钮"
-        android:textSize="20sp" />
+        android:layout_marginTop="30dp"
+        android:text="进入FirstActivity"
+        android:textSize="16sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_kill_app"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="kill_app"
+        android:textSize="16sp" />
+</LinearLayout>

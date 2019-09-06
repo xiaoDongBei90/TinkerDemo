@@ -7,12 +7,9 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
-        // TinkerPatch 插件
-        classpath "com.tinkerpatch.sdk:tinkerpatch-gradle-plugin:1.2.13"
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "com.tencent.bugly:tinker-support:1.1.2"
+        classpath 'com.meituan.android.walle:plugin:1.1.6'
     }
 }
 
